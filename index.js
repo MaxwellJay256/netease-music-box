@@ -41,7 +41,7 @@ const {
       //icon[index].padEnd(2),
       '🎧',
       `${playCount}`.padEnd(2),
-      ' · ',
+      '· ',
       name,
     ];
 
