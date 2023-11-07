@@ -30,7 +30,7 @@ const {
     totalPlayCount += data.playCount;
   });
 
-  const icon = ['🥇', '🥈', '🥉', '', '']
+  const icon = ['🎵', '🎵', '🎵', '🎵', '🎵']
 
   const lines = weekData.slice(0, 5).reduce((prev, cur, index) => {
     const playCount = cur.playCount;
@@ -40,9 +40,8 @@ const {
     const line = [
       icon[index].padEnd(2),
       name,
-      ' · ',
+      ' · 🎧',
       `${playCount}`,
-      'plays',
     ];
 
     return [...prev, line.join(' ')];
@@ -65,7 +64,7 @@ const {
       gist_id: gistId,
       files: {
         [filename]: {
-          filename: `🎵 My last week in music`,
+          filename: `💿 Last week's favorites 🎶`,
           content: lines.join('\n'),
         },
       },
