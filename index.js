@@ -38,10 +38,11 @@ const {
     let name = `${cur.song.name} - ${artists.join('/')}`;
 
     const line = [
-      icon[index].padEnd(2),
+      //icon[index].padEnd(2),
+      '🎧',
+      `${playCount}`.padEnd(2),
+      ' · ',
       name,
-      ' · 🎧',
-      `${playCount}`,
     ];
 
     return [...prev, line.join(' ')];
