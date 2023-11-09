@@ -4,7 +4,8 @@ on:
     branches:
       - master
   schedule:
-    - cron: '0 0 * * *'
+    # 每天北京时间 4:00 10:00 16:00 22:00 更新
+    - cron: '0 20,0,8,16 * * *'
 
 jobs:
   update-gist:
