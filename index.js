@@ -45,6 +45,10 @@ const {
       name,
     ];
 
+    if (playCount === 0) {
+      throw new Error('Error: Cookie expired and needs to be updated.');
+    }
+
     return [...prev, line.join(' ')];
   }, []);
 
