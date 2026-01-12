@@ -5,7 +5,7 @@ on:
       - master
   schedule:
     # 每天北京时间 4:00 16:00 更新
-    - cron: '0 20,8 * * *'
+    - cron: '0 20 * * *'
 
 jobs:
   update-gist:
